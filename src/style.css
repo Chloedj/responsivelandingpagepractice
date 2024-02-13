@@ -19,7 +19,7 @@ body {
     line-height: 1.5;
 }
 
-.hero h2{
+p{
     font-size: 11px;
     color: #717171;
     font-weight: 400;
@@ -60,6 +60,26 @@ body {
     padding-bottom: 10px;
 }
 
+.clients {
+    text-align: center;
+}
+
+.clients-logos {
+    display: flex;
+      
+    justify-content: space-around;
+      align-items: center; 
+        flex-wrap: nowrap;
+        padding: 10px 300px;
+}
+
+.logo {
+    max-width: 100px;
+    
+    height: auto;
+}
+
+
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -68,6 +88,20 @@ body {
 
     .hero-img {
         max-width: 100%;
-        
     }
-}
+
+    .clients-logos {
+            flex-wrap: wrap;
+                
+                justify-content: center;
+                
+        }
+                .logo {
+                    flex: 0 0 20%;
+                    
+                    max-width: 20%;
+                   
+                    margin: 10px;
+                    
+                }
+    }
