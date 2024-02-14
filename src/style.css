@@ -1,6 +1,7 @@
 body {
  
     font-family: 'Inter', sans-serif;
+    padding: 0 20px;
 }
 
 
@@ -40,7 +41,7 @@ body {
 }
 
 
-.hero span {
+span {
     color: #4caf4f
 }
 
@@ -164,30 +165,151 @@ body {
 
 }
 
+
+.container {
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: space-between;
+    padding: 44px 300px;
+    color: #4d4d4d;
+    align-items: center;
+    
+}
+
+.text-section {
+    flex: 1;
+    
+    padding: 20px;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+   
+    padding: 20px;
+}
+
+.grid-item {
+    display: flex;
+    
+    align-items: center;
+   
+    text-align: left;
+    padding: 20px;
+}
+
+.grid-img {
+    
+    width: 30px;
+    
+    margin-right: 20px;
+    
+    height: auto;
+    
+}
+
+
+.grid-item h2,
+.grid-item p {
+    margin: 0;
+    
+}
+
+.container p {
+    font-size: 11px;
+    color: #717171;
+    font-weight: 400;
+    text-align: left;
+
+}
+
 @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        
+        /* Reduced padding */
+    }
+
+    .text-section,
+    .grid-section {
+        padding: 10px 0;
+        /* Adjusted padding for vertical stacking */
+    }
+
+    .grid-section {
+        grid-template-columns: 1fr;
+        /* Single column grid */
+    }
 
     .hero,
     .history {
         flex-direction: column;
-        padding: 20px;
-     
+        text-align: center;
+        padding: 20px 10px;
+        /* Center content for a better mobile experience */
+    }
+
+    .hero h1,
+    .history h2 {
+        font-size: 2rem;
+        /* Slightly smaller for smaller screens */
     }
 
     .clients-logos,
     .targetaudience {
         flex-wrap: wrap;
         justify-content: center;
-        padding: 10px;
+        padding: 20px 10px;
         
     }
 
-    .logo {
-        flex: 0 0 20%;
-        max-width: 20%;
+    .clients-logos .logo,
+    .targetaudience .icon {
+        width: 60px;
+        
         margin: 10px;
+        
     }
 
-    .targetaudience {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    .targetaudience>div {
+         {
+                width: 100%;
+                
+                max-width: none;
+                
+                padding: 10px;
+                
+            }
     }
+
+           .targetaudience {
+               grid-template-columns: 1fr;
+            padding: 0 10px;
+            gap: 30px;
+           }
+        
+        .whofor{
+            padding: 0 10px;
+        }
+        }
+
+@media (max-width: 375px) {
+
+    
+    body {
+        padding: 0 10px;
+       
+    }
+
+    .hero h1,
+    .history h2,
+    .text-section h2 {
+        font-size: 1.5rem;
+        
+    }
+
+   
 }
