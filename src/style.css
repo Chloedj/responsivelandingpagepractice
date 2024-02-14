@@ -11,6 +11,7 @@ body {
     align-items: center;
     text-align: left;
     padding: 66px 300px;
+    color: #4d4d4d;
 }
 
 .hero h1 {
@@ -19,10 +20,11 @@ body {
     line-height: 1.5;
 }
 
-p{
+.hero p{
     font-size: 11px;
     color: #717171;
     font-weight: 400;
+    text-align: left;
 }
 
 .hero a {
@@ -62,6 +64,7 @@ p{
 
 .clients {
     text-align: center;
+    color: #4d4d4d;
 }
 
 .clients-logos {
@@ -73,35 +76,118 @@ p{
         padding: 10px 300px;
 }
 
+.clients p{
+    font-size: 11px;
+        color: #717171;
+        font-weight: 400;
+        
+}
+
 .logo {
     max-width: 100px;
     
     height: auto;
 }
 
+.whofor {
+    margin-top: 30px;
+    padding: 0 100px
+}
+
+
+.whofor h2, h3, p {
+    text-align: center;
+    color: #4d4d4d;
+}
+
+.whofor p {
+    font-size: 11px;
+    color: #717171;
+    font-weight: 400;
+
+}
+
+.targetaudience {
+    display: grid;
+      grid-template-columns: repeat(3, 1fr);
+        gap: 100px;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+    padding: 0 100px;
+}
+
+.targetaudience>div {
+    max-width: 210px;
+    
+    margin: 0 auto;
+    
+    text-align: center;
+   
+}
+
+
+.history {
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 66px 300px;
+        color: #4d4d4d;
+}
+
+.history p {
+    font-size: 11px;
+    color: #717171;
+    font-weight: 400;
+
+}
+
+.history a {
+    background-color: #4caf4f;
+    color: white;
+    font-size: 11px;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 22px;
+
+}
+
+.hero-img {
+    max-width: 100%;
+
+    height: auto;
+
+}
 
 @media (max-width: 768px) {
-    .hero {
+
+    .hero,
+    .history {
         flex-direction: column;
-       
+        padding: 20px;
+     
     }
 
-    .hero-img {
-        max-width: 100%;
+    .clients-logos,
+    .targetaudience {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        
     }
 
-    .clients-logos {
-            flex-wrap: wrap;
-                
-                justify-content: center;
-                
-        }
-                .logo {
-                    flex: 0 0 20%;
-                    
-                    max-width: 20%;
-                   
-                    margin: 10px;
-                    
-                }
+    .logo {
+        flex: 0 0 20%;
+        max-width: 20%;
+        margin: 10px;
     }
+
+    .targetaudience {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
