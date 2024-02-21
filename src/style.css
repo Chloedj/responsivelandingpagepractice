@@ -139,12 +139,18 @@ span {
         color: #4d4d4d;
 }
 
+.history h2{
+    font-size: 30px;
+}
+
 .history p {
     font-size: 11px;
     color: #717171;
     font-weight: 400;
+    text-align: left;
 
 }
+
 
 .history a {
     background-color: #4caf4f;
