@@ -135,7 +135,7 @@ span {
         justify-content: space-between;
         align-items: center;
         text-align: left;
-        padding: 66px 300px;
+        padding: 33px 300px;
         color: #4d4d4d;
 }
 
@@ -231,6 +231,67 @@ span {
 
 }
 
+
+.meet-the-customers {
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+        text-align: left;
+    padding: 22px 300px;
+    color: #4d4d4d;
+    gap: 55px;
+}
+
+.meet-the-customers p {
+    font-size: 13px;
+        color: #717171;
+        font-weight: 400;
+        text-align: left;
+}
+
+.meet-the-customers h4, a {
+    color:#4caf4f;
+    text-decoration: none;
+}
+
+.logos-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.logo-meet {
+    max-width: 30px;
+    
+    height: auto;
+    
+    object-fit: contain;
+    
+}
+
+.button-meet {
+    white-space: nowrap;
+    
+    flex-grow: 0;
+    
+    flex-shrink: 0;
+    
+    padding: 8px 10px;
+    
+}
+.button::after {
+    content: ' ➔';
+  
+    display: inline-block;
+    margin-left: 5px;
+    
+    
+}
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -299,13 +360,7 @@ span {
         
         .whofor{
             padding: 0 10px;
-        }
-        }
-
-@media (max-width: 375px) {
-
-    
-    body {
+        } body {
         padding: 0 10px;
        
     }
@@ -317,5 +372,39 @@ span {
         
     }
 
-   
-}
+        .meet-the-customers {
+            flex-direction: column;
+            
+            padding: 22px 10px;
+           
+            gap: 20px;
+            
+        }
+
+                .image-9 {
+                    display: block;
+                    margin: 0 auto;
+                    
+                }
+    
+        .logos-button-wrapper {
+            justify-content: center;
+            
+            gap: 5px;
+            
+        }
+    
+        .logo-meet,
+        .button-meet {
+            flex-basis: auto;
+            
+        }
+    
+        .button-meet {
+            width: 100%;
+           
+            text-align: center;
+            
+        }
+        }
+
